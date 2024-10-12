@@ -6,7 +6,7 @@ int main() { // Fungsi utama tempat eksekusi program dimulai
         cout << sisi * sisi << endl; // Menghitung kuadrat dari 'sisi' dan mencetaknya
     }
 }
-// keluarannya adalah 
+// keluaran yang tercetak adalah 
 //14641
 //14884
 //15129
