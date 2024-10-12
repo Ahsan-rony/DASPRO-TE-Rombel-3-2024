@@ -1,4 +1,4 @@
-/* Untuk memastikan bahwa Anda telah berhasil menginstal g++ dengan benar, bukalah sebuah terminal/shell, lalu ketikkan perintah berikut:
+Untuk memastikan bahwa Anda telah berhasil menginstal g++ dengan benar, bukalah sebuah terminal/shell, lalu ketikkan perintah berikut:
 g++ --version
 Tekan Enter. Perintah tersebut akan mengeluarkan sejumlah baris yang mirip seperti berikut:
 
