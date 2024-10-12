@@ -16,4 +16,4 @@ int main() {
     // Menghitung dan mencetak jumlah faktorial dari n dan m
     cout << faktorial(n) + faktorial(m) << endl; // Mengoutput hasil faktorial n dan m
 }
-// keluaran yang dihasilkan adalah 2432902008180268800
+// keluaran yang tercetak adalah 2432902008180268800
