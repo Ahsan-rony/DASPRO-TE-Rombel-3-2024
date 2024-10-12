@@ -1,9 +1,9 @@
-// Pak Dengklek memiliki kandang-kandang persegi, dengan panjang sisinya adalah setiap bilangan bulat antara 121 sampai dengan 125 (inklusif). Ia ingin menjual satu (atau lebih) kandang yang memenuhi syarat berikut:
-// - panjang sisinya kelipatan 2, namun
-// - panjang sisinya bukan kelipatan 3.
-// Apakah ada kandang yang dijual? Lengkapilah program di sebelah kanan, agar mengeluarkan sebuah baris berisi:
-// - ada, apabila ada kandang yang dijual, atau
-// - tidak ada, apabila tidak ada.
+/* Pak Dengklek memiliki kandang-kandang persegi, dengan panjang sisinya adalah setiap bilangan bulat antara 121 sampai dengan 125 (inklusif). Ia ingin menjual satu (atau lebih) kandang yang memenuhi syarat berikut:
+     - panjang sisinya kelipatan 2, namun
+     - panjang sisinya bukan kelipatan 3.
+   Apakah ada kandang yang dijual? Lengkapilah program di sebelah kanan, agar mengeluarkan sebuah baris berisi:
+     - ada, apabila ada kandang yang dijual, atau
+     - tidak ada, apabila tidak ada. */
 
 #include <iostream> // Menyertakan library input-output standar C++
 using namespace std; // Memungkinkan penggunaan elemen dari namespace std tanpa prefiks 'std::'
