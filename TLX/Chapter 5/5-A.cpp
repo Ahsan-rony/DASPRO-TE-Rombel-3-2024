@@ -6,3 +6,9 @@ int main() { // Fungsi utama tempat eksekusi program dimulai
         cout << sisi * sisi << endl; // Menghitung kuadrat dari 'sisi' dan mencetaknya
     }
 }
+// keluarannya adalah 
+//14641
+//14884
+//15129
+//15376
+//15625
