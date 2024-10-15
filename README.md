@@ -2,6 +2,7 @@
 Kumpulan file kode OSN &amp; TLX
 Yang udh aku invite pencet link ini biar bisa acc. lewat notif deket profile juga bisa
 https://github.com/Ahsan-rony/DASPRO-TE-Rombel-3-2024/invitations
+Yag belom PM WA
 # Cara Upload File
 1. pilih folder file yang kalian ingin upload, contohnya file OSN, kemudian tekan "Add File"
    ![image](https://github.com/user-attachments/assets/dc85d0be-483a-457a-a918-2ddfc1d7a370)
