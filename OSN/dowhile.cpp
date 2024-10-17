@@ -11,3 +11,4 @@
   } while (i < N);
   printf("akhir dari program\n");
 }
+
