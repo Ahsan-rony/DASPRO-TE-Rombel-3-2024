@@ -1,3 +1,5 @@
+#include <cstdio>
+
 void gambar(int x) {
 if (x > 1000) {
 return;
