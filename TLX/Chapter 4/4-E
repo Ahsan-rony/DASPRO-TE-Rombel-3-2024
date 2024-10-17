@@ -1,4 +1,5 @@
 //1.Apakah keluaran dari potongan program berikut?
+
 int x = 0;
 
 if (x == 0) {
@@ -7,10 +8,13 @@ if (x == 0) {
 if (x >= 0) {
     cout << "x adalah non-negatif" << endl;
 }
+
 //x adalah 0
 //x adalah non-negatif
 
+
 //2.Apakah keluaran dari potongan program berikut?
+
 int x = 0;
 
 if (x < 0) {
@@ -22,9 +26,12 @@ if (x < 0) {
 } else {
     cout << "selesai" << endl;
 }
+
 //x adalah non-negatif
 
+
 //3.Apakah keluaran dari potongan program berikut?
+
 int x = 5 * 5;
 
 if (x == 10) {
@@ -34,4 +41,5 @@ if (x == 10) {
 } else if (x > 25) {
     cout << "kwik" << endl;
 }
+
 //tidak ada keluaran yang dihasilkan
