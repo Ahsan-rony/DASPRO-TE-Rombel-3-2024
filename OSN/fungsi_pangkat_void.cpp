@@ -1,5 +1,4 @@
-#include <iostream>
-using namespace std;
+#include <cstdio>
 
 void pangkat(int a, int b, int &hasil) {
     hasil = 1;
@@ -11,18 +10,18 @@ void pangkat(int a, int b, int &hasil) {
 int main() {
     int a, b, hasil;
 
-    cout << "Masukkan bilangan (a): ";
-    cin >> a;
-    cout << "Masukkan pangkat (b): ";
-    cin >> b;
+    printf("Masukkan bilangan (a): ");
+    scanf("%d", &a);
+    printf("Masukkan pangkat (b): ");
+    scanf("%d", &b);
 
     if (b < 0) {
-        cout << "Pangkat tidak boleh negatif." << endl;
+        printf("Pangkat tidak boleh negatif.\n");
         return 1; // keluar dari program jika b negatif
     }
 
     pangkat(a, b, hasil);
-    cout << a << "^" << b << " = " << hasil << endl;
+    printf("%d^%d = %d\n", a, b, hasil);
 
     return 0;
 }
