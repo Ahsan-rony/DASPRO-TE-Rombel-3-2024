@@ -1,1 +1,37 @@
+//1.Apakah keluaran dari potongan program berikut?
+int x = 0;
 
+if (x == 0) {
+    cout << "x adalah 0" << endl;
+}
+if (x >= 0) {
+    cout << "x adalah non-negatif" << endl;
+}
+//x adalah 0
+//x adalah non-negatif
+
+//2.Apakah keluaran dari potongan program berikut?
+int x = 0;
+
+if (x < 0) {
+    cout << "x adalah negatif" << endl;
+} else if (x >= 0) {
+    cout << "x adalah non-negatif" << endl;
+} else if (x <= 0) {
+    cout << "x adalah non-positif" << endl;
+} else {
+    cout << "selesai" << endl;
+}
+//x adalah non-negatif
+
+//3.Apakah keluaran dari potongan program berikut?
+int x = 5 * 5;
+
+if (x == 10) {
+    cout << "kwak" << endl;
+} else if (x < 25) {
+    cout << "kwek" << endl;
+} else if (x > 25) {
+    cout << "kwik" << endl;
+}
+//tidak ada keluaran yang dihasilkan
