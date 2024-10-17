@@ -1,37 +1,34 @@
-#include <iostream>
-using namespace std;
+#include <cstdio>
+#include <cstring>
 
-const int N = 3;         // Panjang password atau jumlah angka
-int catat[N];            // Array untuk menyimpan password sementara
-bool pernah[N + 1];      // Array untuk menandai apakah angka sudah digunakan
+const int N = 3; // Misalkan N adalah jumlah elemen
+int catat[N]; // Array untuk menyimpan kombinasi
+bool pernah[N + 1]; // Array untuk melacak elemen yang sudah digunakan
 
-// Fungsi untuk menulis password
 void tulis(int kedalaman) {
     if (kedalaman >= N) {
-        // Jika kedalaman mencapai batas N, cetak password
+        // Cetak kombinasi
         for (int i = 0; i < N; i++) {
-            printf("%d", catat[i]); // Cetak angka yang dicatat
+            printf("%d ", catat[i]); // Cetak
         }
         printf("\n");
     } else {
         // Masuk ke lapisan lebih dalam
         for (int i = 1; i <= N; i++) {
-            if (!pernah[i]) { // Apakah angka i belum pernah digunakan?
-                pernah[i] = true;          // Tandai bahwa angka ini sudah digunakan
-                catat[kedalaman] = i;      // Catat angka i pada posisi kedalaman
-                tulis(kedalaman + 1);      // Lanjut ke kedalaman berikutnya
-                pernah[i] = false;         // Reset kembali setelah rekursi selesai
+            if (!pernah[i]) {
+                // i belum pernah?
+                pernah[i] = true;
+                // Gunakan
+                catat[kedalaman] = i; // Catat di sini
+                tulis(kedalaman + 1);
+                pernah[i] = false; // Selesai menggunakan
             }
         }
     }
 }
 
 int main() {
-    // Inisialisasi semua elemen pernah[] dengan false
-    for (int i = 0; i <= N; i++) {
-        pernah[i] = false;
-    }
-    
-    tulis(0); // Memulai rekursi dari kedalaman 0
+    memset(pernah, false, sizeof(pernah)); // Inisialisasi array 'pernah' dengan false
+    tulis(0); // Mulai rekursi dari kedalaman 0
     return 0;
 }
