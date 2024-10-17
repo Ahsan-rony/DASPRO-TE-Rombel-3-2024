@@ -26,3 +26,10 @@ int main() {
 
     return 0;
 }
+
+// penjelasan 
+//Penjelasan Program:
+//Input: Program dimulai dengan membaca jumlah elemen N dan kemudian membaca N bilangan bulat ke dalam array A.
+//Inisialisasi: maxNum diinisialisasi dengan nilai terkecil yang mungkin (std::numeric_limits<int>::min()), dan minNum diinisialisasi dengan nilai terbesar yang mungkin (std::numeric_limits<int>::max()).
+//Pencarian: Program melakukan iterasi melalui array untuk menemukan nilai maksimum dan minimum.
+//Output: Akhirnya, program mencetak bilangan terbesar dan terkecil dalam format yang diinginkan
