@@ -1,13 +1,11 @@
 #include <cstdio>
 
-  int main() {
+int main() {
   int N;
   scanf("%d", &N);
-    
-  int i = 0;
-  while (i < N) {
+  
+  for (int i = N-1; i >= 0; i--) {
     printf("tulisan ini dicetak saat i = %d\n", i);
-    i++;
   }
   printf("akhir dari program\n");
 }

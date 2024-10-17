@@ -1,8 +1,10 @@
 #include <iostream>
 using namespace std;
+
 const int N = 3;         // Panjang password atau jumlah angka
 int catat[N];            // Array untuk menyimpan password sementara
 bool pernah[N + 1];      // Array untuk menandai apakah angka sudah digunakan
+
 // Fungsi untuk menulis password
 void tulis(int kedalaman) {
     if (kedalaman >= N) {
@@ -23,6 +25,7 @@ void tulis(int kedalaman) {
         }
     }
 }
+
 int main() {
     // Inisialisasi semua elemen pernah[] dengan false
     for (int i = 0; i <= N; i++) {

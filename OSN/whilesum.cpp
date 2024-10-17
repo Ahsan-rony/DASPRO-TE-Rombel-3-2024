@@ -1,4 +1,5 @@
 #include <cstdio>
+
   int main() {
   int awal, akhir;
   scanf("%d %d", &awal, &akhir);

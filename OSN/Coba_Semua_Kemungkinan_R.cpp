@@ -8,17 +8,14 @@ int main() {
   scanf("%d", &N);
   R = 1;
   C = N;
-    
-  int i = 1;
-  while (i*i <= N) {
+  for (int i = 1; i <= N; i++) {
     if (N % i == 0) {
       int j = N / i;
       if (abs(R-C) > abs(i-j)) {
         R = i;
         C = j;
-      }
-    }   
-    i++;
-  }
-  printf("%d %d\n", R, C);
-}
+       }
+     }
+   }
+   printf("%d %d\n", R, C);
+ }
