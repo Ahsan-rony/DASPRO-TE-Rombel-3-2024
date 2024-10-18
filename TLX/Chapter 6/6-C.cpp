@@ -1,48 +1,31 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
 using namespace std;
 
-// Fungsi untuk menghitung maksimum bebek yang bisa dibuat senang
-long long maksimum_bebek(int N, long long D, vector<pair<long long, long long>> &data) {
-    // Urutkan cokelat berdasarkan harga (H_i)
-    sort(data.begin(), data.end());
+int main() {
+    int luas[5];
 
-    long long bebek_senang = 0;  // Jumlah bebek yang bisa dibuat senang
+    // Menghitung luas setiap kandang
+    luas[0] = 225 * 335;
+    luas[1] = 215 * 394;
+    luas[2] = 198 * 400;
+    luas[3] = 314 * 298;
+    luas[4] = 299 * 278;
 
-    // Iterasi melalui semua jenis cokelat
-    for (int i = 0; i < N; i++) {
-        long long harga = data[i].first;
-        long long bebek = data[i].second;
+    // Buat sebuah variabel yang menampung luas terbesar.
+    // Pada awalnya, isi variabel tersebut dengan luas dari kandang pertama.
+    int luas_terbesar = luas[0];
 
-        // Hitung berapa banyak cokelat yang bisa dibeli
-        long long maksimal_cokelat = min(bebek, D / harga);
-        bebek_senang += maksimal_cokelat;
-        D -= maksimal_cokelat * harga;
-
-        // Jika anggaran habis, hentikan pembelian
-        if (D <= 0) {
-            break;
+    // Untuk setiap kandang sisanya:
+    for (int i = 1; i < 5; i++) {
+        // Jika luasnya lebih besar daripada variabel luas terbesar:
+        if (luas[i] > luas_terbesar) {
+            // Perbarui nilai variabel luas terbesar dengan luas kandang tersebut.
+            luas_terbesar = luas[i];
         }
     }
 
-    return bebek_senang;
-}
-
-int main() {
-    int N;
-    long long D;
-    cin >> N >> D;
-
-    vector<pair<long long, long long>> data(N);
-
-    // Input harga dan jumlah bebek untuk tiap jenis cokelat
-    for (int i = 0; i < N; i++) {
-        cin >> data[i].first >> data[i].second;
-    }
-
-    // Output hasil
-    cout << maksimum_bebek(N, D, data) << endl;
+    // Menampilkan luas terbesar
+    cout << luas_terbesar << endl;
 
     return 0;
 }
