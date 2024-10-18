@@ -3,17 +3,14 @@
 using namespace std;
 
 bool palindrom(string s) {
-    // Jika string kosong atau hanya memiliki satu karakter, maka pasti palindrom
     if (s.length() <= 1) {
         return true;
     }
 
-    // Periksa apakah karakter pertama dan terakhir sama
     if (s[0] != s[s.length() - 1]) {
         return false;
     }
 
-    // Lakukan rekursi dengan string yang tidak mengandung karakter pertama dan terakhir
     return palindrom(s.substr(1, s.length() - 2));
 }
 
