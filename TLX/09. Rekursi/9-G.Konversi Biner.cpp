@@ -39,3 +39,13 @@ int main() {
     cout << biner(1697) << endl;
     cout << biner(1048575) << endl;
 } 
+
+//Kasus Dasar: Fungsi biner memiliki dua kasus dasar. Jika input n adalah 0, fungsi mengembalikan string "0", dan jika n adalah 1, fungsi mengembalikan string "1". 
+//Kasus dasar ini menangani representasi biner paling sederhana secara langsung.
+
+//Kasus Rekursif: Untuk nilai integer lainnya, fungsi memanggil dirinya sendiri dengan nilai n dibagi 2 (n / 2). Ini secara efektif mengurangi ukuran masalah, 
+//karena pembagian dengan 2 dalam biner sama dengan menggeser bit ke kanan. Hasil dari pemanggilan rekursif ini digabungkan dengan sisa dari n dibagi 2 (n % 2), 
+//yang memberikan digit biner terakhir dari angka saat ini. Fungsi to_string mengonversi digit ini menjadi string.
+
+//Konkatenasi: Pemanggilan rekursif biner(n / 2) menghasilkan string biner untuk n / 2, dan menambahkan to_string(n % 2) ke 
+//hasil ini membentuk string biner untuk n. Ini berlanjut hingga salah satu kasus dasar tercapai, dan rekursi berakhir, menggabungkan semua hasil parsial menjadi string biner akhir.
