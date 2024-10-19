@@ -1,6 +1,6 @@
 //1.Manakah ekspresi boolean yang ekuivalen dengan: n (sebuah variabel bertipe int) memiliki tepat 4 digit?
 
-1000 <= n && n < 10000
+//1000 <= n && n < 10000
 
 
 //2.Sebuah tahun dikatakan tahun kabisat apabila salah satu dari dua kondisi berikut berlaku:
