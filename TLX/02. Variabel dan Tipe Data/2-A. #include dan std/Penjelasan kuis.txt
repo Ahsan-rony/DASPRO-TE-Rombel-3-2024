@@ -1,0 +1,42 @@
+/* Kuis
+1. Di antara program-program di bawah ini, mana sajakah yang sesuai dengan sintaks bahasa C++? Pilih semua yang memenuhi. */
+
+I.
+int main() {
+}
+
+II.
+#include <iostream>
+
+int main() {
+    cout << "C++" << endl;
+}
+
+III.
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "C++" << endl;
+}
+
+IV.
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "C++" << std::endl;
+}
+
+/*
+(a) I dan III
+
+(b) III dan IV
+
+(c) III
+
+(d) I, III, dan IV
+
+(e) II dan III
+
+jawabannya adalah yang (d) */
