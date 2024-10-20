@@ -1,3 +1,21 @@
+/* Soal
+Pak Dengklek memiliki 10 kandang bebek, dinomori dari 1 hingga 10. Pada mulanya, seluruh kandangnya kosong.
+Pak Dengklek kemudian mengisi kandang-kandang bebeknya, sebagai berikut:
+•	Kandang nomor 1 hingga 8, masing-masing diisi 2 ekor bebek.
+•	Kandang nomor 2 hingga 9, masing-masing diisi 10 ekor bebek.
+•	Kandang nomor 5 hingga 6, masing-masing diisi 1 ekor bebek.
+•	Kandang nomor 9 hingga 10, masing-masing diisi 3 ekor bebek.
+•	Kandang nomor 1 hingga 4, masing-masing diisi 7 ekor bebek.
+•	Kandang nomor 1 hingga 4, masing-masing diisi 2 ekor bebek.
+•	Kandang nomor 4 hingga 8, masing-masing diisi 6 ekor bebek.
+Setelah seluruh proses di atas berakhir, Pak Dengklek mengunjungi kandang yang berisi bebek terbanyak. Ada berapakah bebek di kandang tersebut?
+Lengkapilah program di sebelah kanan agar mengeluarkan banyaknya bebek yang dimaksud. Anda diminta untuk menuliskan fungsi isi_bebek_ke_dalam_kandang() yang menerima 3 parameter:
+1.	nomor kandang awal
+2.	nomor kandang akhir
+3.	banyaknya bebek yang diisi ke dalam kandang-kandang tersebut
+Fungsi ini tidak perlu mengembalikan nilai apapun. */
+
+
 #include <iostream>
 using namespace std;
 
